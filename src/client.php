@@ -8,3 +8,10 @@ $sum = \src\Lib\Adder::add(2,3);
 echo "Sum of 2 and 3 is {$sum} \n";
 
 //------------------------------------//
+
+//------------ Logger -----------------//
+
+$logger1 = \src\Lib\Logger::getInstance();
+$logger1->log("foo \n");
+
+//------------------------------------//
