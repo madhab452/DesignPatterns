@@ -3,7 +3,7 @@ declare(strict_types=1);
 namespace tests\src\Lib;
 
 use PHPUnit\Framework\TestCase;
-use src\Lib\Logger;
+use src\Lib\Singleton\Logger;
 
 final class LoggerTest extends TestCase {
     public function test(){
