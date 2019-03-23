@@ -1,4 +1,5 @@
 <?php
+
 namespace src\Lib\Adapter;
 
 class PersonAdapter implements Person
@@ -11,7 +12,8 @@ class PersonAdapter implements Person
         $this->api = $api;
     }
 
-    public function getName(): string {
-        return $this->api->getFirstName() . " ". $this->api->getLastName();
+    public function getName(): string
+    {
+        return $this->api->getFirstName() . " " . $this->api->getLastName();
     }
 }
