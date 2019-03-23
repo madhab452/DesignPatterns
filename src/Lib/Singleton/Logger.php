@@ -1,12 +1,14 @@
 <?php
-declare(strict_types = 1);
+declare(strict_types=1);
+
 namespace src\Lib\Singleton;
 
 /**
  * Class Logger
  * for simplicity i have just used a log method, which writes the given input to the console
  */
-class Logger {
+class Logger
+{
 
     private static $instance = null;
 
@@ -17,6 +19,7 @@ class Logger {
     private function __construct()
     {
     }
+
     /**
      * Private clone will prevent cloning of the object
      */
@@ -36,7 +39,7 @@ class Logger {
      */
     public static function getInstance()
     {
-        if(self::$instance == null){
+        if (self::$instance == null) {
             self::$instance = new Logger();
         }
         return self::$instance;
@@ -45,7 +48,8 @@ class Logger {
     /**
      * @param string $str
      */
-    public function log(string $str) : void {
+    public function log(string $str): void
+    {
         // here we can log the data to filesystem or database
         echo $str;
     }
